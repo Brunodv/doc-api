@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
       <MyState>
-        <Router>
+      <Router basename="/doc-api"> {/* ← IMPORTANTE para GitHub Pages */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/docs" element={<Docs />} />
